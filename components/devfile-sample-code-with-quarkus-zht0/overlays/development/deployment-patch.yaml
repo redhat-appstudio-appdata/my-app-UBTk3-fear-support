@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-zht0
+  namespace: beaumorley-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:e9f0442f74ba60cf3ba177b3a162a2a36aa1ff1a779b4e14b5c5ee916546ef76
+        name: container-image
+        resources: {}
+status: {}
